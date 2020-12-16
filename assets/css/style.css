@@ -15,7 +15,7 @@ html body {
 }
 
 .full-margin{
-    margin:2px;
+    margin:5px;
 }
 
 /* Navbar styling */
@@ -153,6 +153,42 @@ footer {
     line-height: 10px;
 }
 
+/*Product card styling*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: 'IM Fell Great Primer', cursive , sans-serif;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color:#fafafaad;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+
 /*Screensize response*/
 
 
@@ -266,6 +302,10 @@ footer {
         margin-right: .5%;
         margin-left: .5%;
         padding-bottom:15%;
+    }
+
+    .card{
+        width:80%;
     }
 
 }

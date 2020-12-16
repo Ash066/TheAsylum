@@ -142,6 +142,7 @@ The story information located on the book.html page was copied from the official
 ### Media
 
 * All icons used for this site were sourced at [FontAwesome](https://fontawesome.com/)
+* Template for product cards on shop.html taken from [W3Schools](https://www.w3schools.com/howto/howto_css_product_card.asp)
 
 #### The following images were used in creation of this site:
 * Emilie-1: https://fanart.tv/detailpreview/fanart/music/c8bc9ad3-1df2-4c9b-9cf7-cf6fc60441dc/artistbackground/autumn-emilie-533c075865628.jpg
