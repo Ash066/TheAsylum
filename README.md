@@ -150,6 +150,17 @@ The story information located on the book.html page was copied from the official
 * Emilie-4:https://fanart.tv/fanart/music/c8bc9ad3-1df2-4c9b-9cf7-cf6fc60441dc/artistbackground/autumn-emilie-533c0758a1e9f.jpg
 * Emilie-5: https://fanart.tv/detailpreview/fanart/music/c8bc9ad3-1df2-4c9b-9cf7-cf6fc60441dc/artistbackground/autumn-emilie-533c07587a54b.jpg
 * Emilie-6: https://fanart.tv/fanart/music/c8bc9ad3-1df2-4c9b-9cf7-cf6fc60441dc/artistbackground/autumn-emilie-535820527684a.jpg
+* Emilie-book-1: https://images.squarespace-cdn.com/content/v1/5929c2669de4bbbc0b73714b/1534578264235-TR2FLKOHY49C9ZTZAWKF/ke17ZwdGBToddI8pDm48kDHjBJd2_ybbH2OBFKe4JKx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UV_xSm9jvexS626EUnXNi3fn63Dn63w846fi8JVeyMKH5RMP2GKpYn13DALJiEdXnQ/Paperback-Slide.jpg?format=1500w
+* shop-1:https://cdn.shopify.com/s/files/1/0093/7472/products/21_b0e7a9a2-fa0f-4181-9141-c248b3f9c7a8_500x650_crop_center.jpg?v=1604064698
+* shop-2: https://cdn.shopify.com/s/files/1/0093/7472/products/COver-Stack-WBG-1300_500x650_crop_center.jpg?v=1594308391
+* shop-3:https://cdn.shopify.com/s/files/1/0093/7472/products/CB-Front-1-Ghosted-1300_500x650_crop_center.jpg?v=1594308381
+* shop-4:https://cdn.shopify.com/s/files/1/0093/7472/products/CB-Front-1-Ghosted-1300_fe3c78f7-e47e-4410-9df4-9158b13c0ea5_500x650_crop_center.jpg?v=1594308535
+* shop-5:https://cdn.shopify.com/s/files/1/0093/7472/products/Black-Flat-1300_500x650_crop_center.jpg?v=1594308427
+* shop-6:https://cdn.shopify.com/s/files/1/0093/7472/products/Inmates_-Black-Front-Unisex_500x650_crop_center.jpg?v=1594308467
+* shop-7:https://cdn.shopify.com/s/files/1/0093/7472/products/1-S_1428d22f-3f02-4932-8d9d-5f6216f45d06_500x650_crop_center.jpg?v=1594311741
+* shop-8:https://cdn.shopify.com/s/files/1/0093/7472/products/Grey-Rat-Mask-Front_500x650_crop_center.jpg?v=1594311800
+* shop-9:https://cdn.shopify.com/s/files/1/0093/7472/products/15oz-2_1bc97065-9165-4480-a15d-7e54df82e146_500x650_crop_center.jpg?v=1594308465
+* shop-10:https://cdn.shopify.com/s/files/1/0093/7472/products/1_e4c87ceb-aba8-44c1-9947-80c58fa7954d_500x650_crop_center.jpg?v=1594311747
 
 #### Videos
 All videos are sourced from the official Emilie Autumn [Youtube](https://www.youtube.com/channel/UC3wbtmpPwifYvxWmlNwHk8g) and the Emilie Autumn [Topic](https://www.youtube.com/channel/UCMOLo6A8N-UqvIVFFqsGQuw).
