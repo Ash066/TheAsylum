@@ -90,6 +90,9 @@ The about page features the same responsive navigation and footer of the index p
 This page utilises a free/open source ecommerce api.
 
 ## Tecnologies Used
+* HTML 5
+* Javascript
+* CSS 3
 * All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
 * [Bootstrap](https://getbootstrap.com/) was utilised along with user created css stylesheets in the design and function of these pages.
 * Javascript elements taken from the [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/javascript/) website.
@@ -134,6 +137,7 @@ The following steps were taken to deploy this site:
 ### Content
 
 About information located on the about.html page copied from official site, found [here](https://www.emilieautumn.com/story#the-story).
+The story information located on the book.html page was copied from the official site, found [here](https://www.emilieautumn.com/books#the-book).
 
 ### Media
 
