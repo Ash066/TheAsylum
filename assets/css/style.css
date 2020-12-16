@@ -104,6 +104,20 @@ footer {
     margin-bottom:6px;
 }
 
+.cart{
+    padding: 10px 25px;
+    font-family: 'IM Fell Great Primer', cursive , sans-serif;
+    font-size:xx-large;
+    color: #fafafaad;
+    background-color:#55585c;
+    border-radius: 15px;
+    position: sticky;
+    float:right;
+    margin-right:10px;
+    bottom: 60px;
+    top:10px;
+}
+
 /* Home Gallery styling*/
 
 #carouselBandImages{
@@ -172,7 +186,7 @@ footer {
   outline: 0;
   padding: 12px;
   color:#fafafaad;
-  background-color: #000;
+  background-color: #55585c;
   text-align: center;
   cursor: pointer;
   width: 100%;
