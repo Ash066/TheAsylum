@@ -104,7 +104,9 @@ footer {
     margin-bottom:6px;
 }
 
-.cart{
+/*Cart styling*/
+
+.cart-icon{
     padding: 10px 25px;
     font-family: 'IM Fell Great Primer', cursive , sans-serif;
     font-size:xx-large;
@@ -116,6 +118,57 @@ footer {
     margin-right:10px;
     bottom: 60px;
     top:10px;
+}
+
+.cart {
+  position: fixed;
+  min-height: 160px;
+  background: #55585c;
+  left: 40%;
+  top:50%;
+  transition: all 0.3s ease-in-out;
+  background: rgba(85, 88, 92, 0.6);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 288px;
+  padding: 32px 24px;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* cart item */
+.cart-item-remove {
+  color: #343a40;
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: #000000;
+}
+#cart-item-price {
+  font-size: 12px;
+}
+
+/* cart buttons */
+.btn-pink {
+  color: #d9b5b5 !important;
+  border-color: #d9b5b5 !important;
+}
+.btn-black {
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+.btn-black:hover {
+  color: #d9b5b5 !important;
+  background: #000000 !important;
+}
+.btn-pink:hover {
+  background:#d9b5b5 !important;
+  color: #000000 !important;
 }
 
 /* Home Gallery styling*/
