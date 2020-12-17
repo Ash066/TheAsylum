@@ -55,11 +55,19 @@ html body {
 }
 
 /*About styling*/
-    .about-img{
-        padding: 20px 40px;
-        width: 100%;
-        height: 770px;
-    }
+.about-img{
+    padding: 20px 40px;
+    width: 100%;
+    height: 770px;
+}
+
+/*Book- styling*/
+.book-img{
+    padding: 20px 40px;
+    width: 100%;
+    height: 520px;
+}
+
 
 /* Footer styling */
 footer {
@@ -120,56 +128,56 @@ footer {
     top:10px;
 }
 
-.cart {
-  position: fixed;
-  min-height: 160px;
-  background: #55585c;
-  left: 40%;
-  top:50%;
-  transition: all 0.3s ease-in-out;
-  background: rgba(85, 88, 92, 0.6);
-  width: 0;
-  overflow: hidden;
-}
-.show-cart {
-  width: 288px;
-  padding: 32px 24px;
-  transform: rotateY(-360deg);
-}
-.cart-item {
-  transition: all 2s ease-in-out;
-}
+    .cart {
+    position: fixed;
+    min-height: 160px;
+    background: #55585c;
+    left: 40%;
+    top:40%;
+    transition: all 0.3s ease-in-out;
+    background: rgba(85, 88, 92, 0.6);
+    width: 0;
+    overflow: hidden;
+    }
+    .show-cart {
+    width: 288px;
+    padding: 32px 24px;
+    transform: rotateY(-360deg);
+    }
+    .cart-item {
+    transition: all 2s ease-in-out;
+    }
 
-/* cart item */
-.cart-item-remove {
-  color: #343a40;
-  transition: all 1s ease-in-out;
-}
-.cart-item-remove:hover {
-  transform: scale(1.1);
-  color: #000000;
-}
-#cart-item-price {
-  font-size: 12px;
-}
+    /* cart item */
+    .cart-item-remove {
+    color: #343a40;
+    transition: all 1s ease-in-out;
+    }
+    .cart-item-remove:hover {
+    transform: scale(1.1);
+    color: #000000;
+    }
+    #cart-item-price {
+    font-size: 12px;
+    }
 
-/* cart buttons */
-.btn-pink {
-  color: #d9b5b5 !important;
-  border-color: #d9b5b5 !important;
-}
-.btn-black {
-  color: #000000 !important;
-  border-color: #000000 !important;
-}
-.btn-black:hover {
-  color: #d9b5b5 !important;
-  background: #000000 !important;
-}
-.btn-pink:hover {
-  background:#d9b5b5 !important;
-  color: #000000 !important;
-}
+    /* cart buttons */
+    .btn-pink {
+    color: #d9b5b5 !important;
+    border-color: #d9b5b5 !important;
+    }
+    .btn-black {
+    color: #000000 !important;
+    border-color: #000000 !important;
+    }
+    .btn-black:hover {
+    color: #d9b5b5 !important;
+    background: #000000 !important;
+    }
+    .btn-pink:hover {
+    background:#d9b5b5 !important;
+    color: #000000 !important;
+    }
 
 /* Home Gallery styling*/
 
@@ -315,6 +323,10 @@ footer {
     .about-text{
         padding:25px 5px;
     }
+
+    .cart{
+        left:30%;
+    }
 }
 
 /* Mobile Response */
@@ -373,6 +385,15 @@ footer {
 
     .card{
         width:80%;
+    }
+
+    .cart{
+        left:15%;
+    }
+
+    .book-img{
+        padding:20px 20px;
+        height:360px;
     }
 
 }
