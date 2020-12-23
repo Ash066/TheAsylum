@@ -2,12 +2,24 @@
 (function () {
 
     const cartInfo = document.getElementById("cart-info");
-    const cart = document.getElementById("cart");
+    const cartView = document.getElementById("cartView");
 
     cartInfo.addEventListener('click', function () {
-        cart.classList.toggle("show-cart");
+        cartView.classList.toggle("show-cart");
     })
 })();
 
-/*Add items to Cart*/
+/*Selecting Product Details From Shop.html*/
 
+const addToCartButtonsDom = document.querySelectorAll('[data-action="ADD_TO_CART"]');
+
+addToCartButtonsDom.forEach(addToCartButtonDom =>{
+    addToCartButtonDom.addEventListener("click", () => {
+        const productDom = addToCartButtonDom.parentNode;
+        const product = {
+            image: productDom.querySelector(".product_image").getAttribute("src"),
+            name: productDom.querySelector(".product_name").innerText,
+            price: productDom.querySelector(".product_price").innerText
+        };
+    });
+});
