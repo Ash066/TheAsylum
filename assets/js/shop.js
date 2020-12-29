@@ -16,6 +16,8 @@ let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 const cartDOM = document.querySelector('.cart');
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="ADD_TO_CART"]');
 
+
+
 if (cart.length > 0) {
     cart.forEach(cartItem => {
         const product = cartItem;
@@ -28,7 +30,6 @@ if (cart.length > 0) {
                 handleActionButtons(addToCartButtonDOM, product);
             }
         });
-
     });
 }
 
@@ -67,9 +68,12 @@ function insertItemToDOM(product) {
       <button class="btn btn-danger btn-small" data-action="REMOVE_ITEM">&times;</button>
     </div>
   `);
+
+  addCartFooter();
+  
 }
 
-/* Functions handling action buttons in cart */
+/* Functions handling item action buttons in cart */
 
 function handleActionButtons(addToCartButtonDOM, product) {
     addToCartButtonDOM.innerText = 'In Cart';
@@ -119,4 +123,65 @@ function removeItem(product, cartItemDOM, addToCartButtonDOM) {
     localStorage.setItem('cart', JSON.stringify(cart));
     addToCartButtonDOM.innerText = 'Add To Cart';
     addToCartButtonDOM.disabled = false;
+}
+
+function addCartFooter() {
+  if (document.querySelector('.cart-footer') === null) {
+    cartDOM.insertAdjacentHTML('afterend', `
+      <div>
+        <button class="btn btn-black" data-action="CLEAR_CART">Clear Cart</button>
+        <button class="btn btn-pink" data-action="CHECKOUT">Pay</button>
+      </div>
+    `);
+
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
+    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
+  }
+}
+
+/* Functions handling footer of clear and checkout */
+
+function addCartFooter() {
+  if (document.querySelector('.cart-footer') === null) {
+    cartDOM.insertAdjacentHTML('afterend', `
+      <div class="cart-footer cart-buttons-container mt-3 d-flex justify-content-between">
+        <button class="btn btn-black" data-action="CLEAR_CART">Clear Cart</button>
+        <button class="btn btn-pink" data-action="CHECKOUT">Checkout</button>
+      </div>
+    `);
+
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
+    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
+  }
+}
+
+function clearCart() {
+  cartDOM.querySelectorAll('.cart_item').forEach(cartItemDOM => {
+    cartItemDOM.classList.add('cart_item-removed');
+    setTimeout(() => cartItemDOM.remove(), 250);
+  });
+
+  cart = [];
+  localStorage.removeItem('cart');
+  document.querySelector('.cart-footer').remove();
+
+  addToCartButtonsDOM.forEach(addToCartButtonDOM => {
+    addToCartButtonDOM.innerText = 'Add To Cart';
+    addToCartButtonDOM.disabled = false;
+  });
+}
+
+function checkout() {
+
+}
+
+function countCartTotal() {
+  let cartTotal = 0;
+  cart.forEach(cartItem => cartTotal += cartItem.quantity * cartItem.price);
+  document.querySelector('[data-action="CHECKOUT"]').innerText = `&euro;${cartTotal}`;
+}
+
+function saveCart() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+  countCartTotal();
 }
