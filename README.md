@@ -5,7 +5,6 @@ The goal of this site is to promote the artist Emilie Autumn and associated fand
 * Providing information about the artist for fans and potential fans.
 * Boosting merchandise sales.
 * Promoting book sales.
-* Providing oracle card readings using the 'Asylum Oracle'.
 
 ## UX
 
@@ -59,31 +58,6 @@ This pages layout is achieved utilising rows and columns and embedded videos. Th
 ### Book
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
 It includes images of the book, a short description and links to buy.
-
-### Oracle
-The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
-This page will give a short introduction into what the Asylum Oracle is and will link to where a deck can be purchased on the shop page. 
-Below this there are four buttons labeled buttons for the user to attain their own reading based on four different catagories:
-
-#### Daily
-The user will be presented with the card layout with the cards laying face down. 
-The cards will be selected by a javascript random number generator and will flip to face up and display of descriptive text using jquery upon users click. The card meaning will be entered into a string specific to this page generating a message specific to the users name, option picked, and card drawn. 
-This page will only be accessable through the selection page buttons but will still use the same responsive navigation and footer of the index page promoting familiarity of use.
-
-#### Weekly
-The user will be presented with the card layout with the cards laying face down. 
-The cards will be selected by a javascript random number generator and will flip to face up and display of descriptive text using jquery upon users click. The card meaning will be entered into a string specific to this page generating a message specific to the users name, option picked, and card drawn. 
-This page will only be accessable through the selection page buttons but will still use the same responsive navigation and footer of the index page promoting familiarity of use.
-
-#### Love
-The user will be presented with the card layout with the cards laying face down. 
-The cards will be selected by a javascript random number generator and will flip to face up and display of descriptive text using jquery upon users click. The card meaning will be entered into a string specific to this page generating a message specific to the users name, option picked, and card drawn. 
-This page will only be accessable through the selection page buttons but will still use the same responsive navigation and footer of the index page promoting familiarity of use.
-
-#### Career
-The user will be presented with the card layout with the cards laying face down. 
-The cards will be selected by a javascript random number generator and will flip to face up and display of descriptive text using jquery upon users click. The card meaning will be entered into a string specific to this page generating a message specific to the users name, option picked, and card drawn. 
-This page will only be accessable through the selection page buttons but will still use the same responsive navigation and footer of the index page promoting familiarity of use.
 
 ### Shop
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
@@ -178,4 +152,5 @@ All videos are sourced from the official Emilie Autumn [Youtube](https://www.you
 * Emilie Autumn whom provided inspiration for this project.
 * Roman Grubic, my in class co-ordinator whom provided support on a daily basis.
 * Excellence Ilesanmi, my mentor whom provided industry perspective and support via the mentor sessions.
+* My family, whom provided support during the christmas period.
 * Code institute, for providing this opportunity to take part in this course and for the learning supports provided.
