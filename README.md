@@ -12,31 +12,37 @@ The goal of this site is to promote the artist Emilie Autumn and associated fand
 Website design was initially planned using the following wireframes which I created:
  
  #### Desktop
- ![Desktop Home](assets/wireframes/desktop-wireframes-home.jpg)
- ![Desktop About](assets/wireframes/desktop-wireframes-about.jpg)
- ![Desktop Music](assets/wireframes/desktop-wireframes-music.jpg)
- ![Desktop Events](assets/wireframes/desktop-wireframes-events.jpg)
- ![Desktop Merch](assets/wireframes/desktop-wireframes-merch.jpg)
+ ![Desktop Home](assets/wireframes/desktop-wireframe-home.jpg)
+ ![Desktop About](assets/wireframes/desktop-wireframe-about.jpg)
+ ![Desktop Music](assets/wireframes/desktop-wireframe-music.jpg)
+ ![Desktop Book](assets/wireframes/desktop-wireframe-book.jpg)
+ ![Desktop Shop](assets/wireframes/desktop-wireframe-shop.jpg)
+ ![Desktop Checkout](assets/wireframes/desktop-wireframe-checkout.jpg)
+ ![Desktop OrderComplete](assets/wireframes/desktop-wireframe-ordercomplete.jpg)
 
 #### Tablet
- ![Tablet Home](assets/wireframes/tablet-wireframes-home.jpg)
- ![Tablet About](assets/wireframes/tablet-wireframes-about.jpg)
- ![Tablet Music](assets/wireframes/tablet-wireframes-music.jpg)
- ![Tablet Events](assets/wireframes/tablet-wireframes-events.jpg)
- ![Tablet Merch](assets/wireframes/tablet-wireframes-merch.jpg)
+ ![Tablet Home](assets/wireframes/tablet-wireframe-home.jpg)
+ ![Tablet About](assets/wireframes/tablet-wireframe-about.jpg)
+ ![Tablet Music](assets/wireframes/tablet-wireframe-music.jpg)
+ ![Tablet Book](assets/wireframes/tablet-wireframe-book.jpg)
+ ![Tablet Shop](assets/wireframes/tablet-wireframe-shop.jpg)
+ ![Tablet Checkout](assets/wireframes/tablet-wireframe-checkout.jpg)
+ ![Tablet OrderComplete](assets/wireframes/tablet-wireframe-ordercomplete.jpg)
 
  #### Mobile
- ![Mobile Home](assets/wireframes/mobile-wireframes-home.jpg)
- ![Mobile About](assets/wireframes/mobile-wireframes-about.jpg)
- ![Mobile Music](assets/wireframes/mobile-wireframes-music.jpg)
- ![Mobile Events](assets/wireframes/mobile-wireframes-events.jpg)
- ![Mobile Merch](assets/wireframes/mobile-wireframes-merch.jpg)
+ ![Mobile Home](assets/wireframes/mobile-wireframe-home.jpg)
+ ![Mobile About](assets/wireframes/mobile-wireframe-about.jpg)
+ ![Mobile Music](assets/wireframes/mobile-wireframe-music.jpg)
+ ![Mobile Book](assets/wireframes/mobile-wireframe-book.jpg)
+ ![Mobile Shop](assets/wireframes/mobile-wireframe-shop.jpg)
+ ![Mobile Checkout](assets/wireframes/mobile-wireframe-checkout.jpg)
+ ![Mobile OrderComplete](assets/wireframes/mobile-wireframe-ordercomplete.jpg)
 
 Wireframes available as pdf here:
 
-* [Desktop](assets/wireframes/desktop-wireframes.pdf)
-* [Tablet](assets/wireframes/tablet-wireframes.pdf)
-* [Mobile](assets/wireframes/mobile-wireframes.pdf)
+* [Desktop](assets/wireframes/DesktopWireframes.pdf)
+* [Tablet](assets/wireframes/TabletWireframes.pdf)
+* [Mobile](assets/wireframes/MobileWireframes.pdf)
 
 ### User Stories
 
@@ -67,6 +73,7 @@ This page utilises a free/open source ecommerce api.
 * HTML 5
 * Javascript
 * CSS 3
+* jQuery
 * All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
 * [Bootstrap](https://getbootstrap.com/) was utilised along with user created css stylesheets in the design and function of these pages.
 * Javascript elements taken from the [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/javascript/) website.
@@ -110,8 +117,9 @@ The following steps were taken to deploy this site:
 
 ### Content
 
-About information located on the about.html page copied from official site, found [here](https://www.emilieautumn.com/story#the-story).
-The story information located on the book.html page was copied from the official site, found [here](https://www.emilieautumn.com/books#the-book).
+* About information located on the about.html page copied from official site, found [here](https://www.emilieautumn.com/story#the-story).
+* The story information located on the book.html page was copied from the official site, found [here](https://www.emilieautumn.com/books#the-book).
+* Checkout form found in checkout.html adapted from [w3schools](https://www.w3schools.com/howto/howto_css_checkout_form.asp)
 
 ### Media
 
