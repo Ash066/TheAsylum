@@ -14,7 +14,7 @@ let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 
 /* Accessing objects from DOM */
 const cartDOM = document.querySelector('.cart');
-const addToCartButtonsDOM = document.querySelectorAll('[data-action="ADD_TO_CART"]');
+const addToCartButtonsDOM = document.querySelectorAll('[data-action="add_to_cart"]');
 
 
 
@@ -168,13 +168,3 @@ function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
   countCartTotal();
 }
-
-/*
-function formcomplete() {
-	 if(document.getElementsByClassName("check").value==="") { 
-            document.getElementsByClassName('btn2').disabled = true; 
-        } else { 
-            document.getElementsByClassName('btn2').disabled = false;
-        }
-    }
-    */
