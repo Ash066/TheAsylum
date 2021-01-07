@@ -62,7 +62,7 @@ function insertItemToDOM(product) {
       <img class="cart_item_image" src="${product.image}" alt="${product.name}">
       <h3 class="cart_item_name">${product.name}</h3>
       <h3 class="cart_item_price">${product.price}</h3>
-      <button class="btn btn-secondary btn-small${(product.quantity === 1 ? ' btn-danger' : '')}" data-action="DECREASE_ITEM">&minus;</button>
+      <button class="btn btn-secondary btn-small${(product.quantity === 1 ? ' btn-danger' : '')}" data-action="decrease_item">&minus;</button>
       <h3 class="cart_item_quantity">${product.quantity}</h3>
       <button class="btn btn-secondary btn-small" data-action="INCREASE_ITEM">&plus;</button>
       <button class="btn btn-danger btn-small" data-action="REMOVE_ITEM">&times;</button>
@@ -83,7 +83,7 @@ function handleActionButtons(addToCartButtonDOM, product) {
     cartItemsDOM.forEach(cartItemDOM => {
         if (cartItemDOM.querySelector('.cart_item_name').innerText === product.name) {
             cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItem(product, cartItemDOM));
-            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItem(product, cartItemDOM, addToCartButtonDOM));
+            cartItemDOM.querySelector('[data-action="decrease_item"]').addEventListener('click', () => decreaseItem(product, cartItemDOM, addToCartButtonDOM));
             cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM, addToCartButtonDOM));
         }
     });
@@ -93,7 +93,7 @@ function increaseItem(product, cartItemDOM) {
     cart.forEach(cartItem => {
         if (cartItem.name === product.name) {
             cartItemDOM.querySelector('.cart_item_quantity').innerText = ++cartItem.quantity;
-            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').classList.remove('btn-danger');
+            cartItemDOM.querySelector('[data-action="decrease_item"]').classList.remove('btn-danger');
             saveCart();
         }
     });
@@ -110,7 +110,7 @@ function decreaseItem(product, cartItemDOM, addToCartButtonDOM) {
             }
 
             if (cartItem.quantity === 1) {
-                cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').classList.add('btn-danger');
+                cartItemDOM.querySelector('[data-action="decrease_item"]').classList.add('btn-danger');
             }
         }
     });
@@ -125,33 +125,19 @@ function removeItem(product, cartItemDOM, addToCartButtonDOM) {
     addToCartButtonDOM.disabled = false;
 }
 
-function addCartFooter() {
-  if (document.querySelector('.cart-footer') === null) {
-    cartDOM.insertAdjacentHTML('afterend', `
-      <div>
-        <button class="btn btn-black" data-action="CLEAR_CART">Clear Cart</button>
-        <button class="btn btn-pink" data-action="CHECKOUT">Pay</button>
-      </div>
-    `);
-
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
-    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
-  }
-}
-
 /* Functions handling footer of clear and checkout */
 
 function addCartFooter() {
   if (document.querySelector('.cart-footer') === null) {
     cartDOM.insertAdjacentHTML('afterend', `
       <div class="cart-footer cart-buttons-container mt-3 d-flex justify-content-between">
-        <button class="btn btn-black" data-action="CLEAR_CART">Clear Cart</button>
-        <button class="btn btn-pink" data-action="CHECKOUT">Checkout</button>
+        <button class="btn btn-black" data-action="clear_cart">Clear Cart</button>
+        <h4 data-action="total"></h4>
+        <button class="btn btn-pink"><a href="checkout.html">Checkout</a></button>
       </div>
     `);
 
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
-    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
+    document.querySelector('[data-action="clear_cart"]').addEventListener('click', () => clearCart());
   }
 }
 
@@ -171,41 +157,24 @@ function clearCart() {
   });
 }
 
-function checkout() {
-    let paypalFormHTML = `
-    <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_cart">
-      <input type="hidden" name="upload" value="1">
-      <input type="hidden" name="business" value="sb-npdkt4534183@business.example.com">
-  `;
-
-  cart.forEach((cartItem, index) => {
-    ++index;
-    paypalFormHTML += `
-      <input type="hidden" name="item_name_${index}" value="${cartItem.name}">
-      <input type="hidden" name="amount_${index}" value="${cartItem.price}">
-      <input type="hidden" name="quantity_${index}" value="${cartItem.quantity}">
-    `;
-  });
-
-  paypalFormHTML += `
-      <input type="submit" value="PayPal">
-    </form>
-    <div class="overlay"></div>
-  `;
-
-  document.querySelector('body').insertAdjacentHTML('beforeend', paypalFormHTML);
-  document.getElementById('paypal-form').submit();
-
-}
-
 function countCartTotal() {
   let cartTotal = 0;
   cart.forEach(cartItem => cartTotal += cartItem.quantity * cartItem.price);
-  document.querySelector('[data-action="CHECKOUT"]').innerText = `$ ${cartTotal}`;
+  let total = cartTotal.toFixed(2);
+  document.querySelector('[data-action="total"]').innerText = `Total : $ ${total}`;
 }
 
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
   countCartTotal();
 }
+
+/*
+function formcomplete() {
+	 if(document.getElementsByClassName("check").value==="") { 
+            document.getElementsByClassName('btn2').disabled = true; 
+        } else { 
+            document.getElementsByClassName('btn2').disabled = false;
+        }
+    }
+    */
