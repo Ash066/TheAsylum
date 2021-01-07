@@ -359,6 +359,21 @@ label {
   background-color: #55585c;
 }
 
+/* Order placed styling */
+
+.orderplaced{
+    background-color: #343a40;
+    color: #d9b5b5;
+    font-family:'IM Fell Great Primer', cursive , sans-serif;
+    width: 80%;
+    border: 15px solid gray;
+    padding: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10%;
+
+}
+
 
 /*Screensize response*/
 

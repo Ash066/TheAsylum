@@ -64,8 +64,8 @@ function insertItemToDOM(product) {
       <h3 class="cart_item_price">${product.price}</h3>
       <button class="btn btn-secondary btn-small${(product.quantity === 1 ? ' btn-danger' : '')}" data-action="decrease_item">&minus;</button>
       <h3 class="cart_item_quantity">${product.quantity}</h3>
-      <button class="btn btn-secondary btn-small" data-action="INCREASE_ITEM">&plus;</button>
-      <button class="btn btn-danger btn-small" data-action="REMOVE_ITEM">&times;</button>
+      <button class="btn btn-secondary btn-small" data-action="increase_item">&plus;</button>
+      <button class="btn btn-danger btn-small" data-action="remove_item">&times;</button>
     </div>
   `);
 
@@ -82,9 +82,9 @@ function handleActionButtons(addToCartButtonDOM, product) {
     const cartItemsDOM = cartDOM.querySelectorAll('.cart_item');
     cartItemsDOM.forEach(cartItemDOM => {
         if (cartItemDOM.querySelector('.cart_item_name').innerText === product.name) {
-            cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItem(product, cartItemDOM));
+            cartItemDOM.querySelector('[data-action="increase_item"]').addEventListener('click', () => increaseItem(product, cartItemDOM));
             cartItemDOM.querySelector('[data-action="decrease_item"]').addEventListener('click', () => decreaseItem(product, cartItemDOM, addToCartButtonDOM));
-            cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM, addToCartButtonDOM));
+            cartItemDOM.querySelector('[data-action="remove_item"]').addEventListener('click', () => removeItem(product, cartItemDOM, addToCartButtonDOM));
         }
     });
 }
