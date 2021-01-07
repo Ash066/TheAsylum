@@ -285,7 +285,7 @@ footer {
 }
 
 .card img{
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
@@ -420,7 +420,7 @@ label {
     }
 
     #music-video iframe{
-        height: 340px;
+        width: auto;
     }
 
     .form-layout{
@@ -450,6 +450,14 @@ label {
 
     .cart_item{
         grid-template-columns: 16px 112px 16px 20px 5px 20px 20px;
+    }
+
+    .store-item-icon{
+        margin-bottom: 200px;
+    }
+
+    .mobile-bottom{
+        margin-bottom: 7%;
     }
 
 }
@@ -501,9 +509,10 @@ label {
     }
 
     .form-layout{
-        height: 60%;
-        width: 60%;
-        margin:20%;
+        height: 80%;
+        width: 99%;
+        margin-right: .5%;
+        margin-left: .5%;
         padding-bottom:15%;
     }
 
@@ -540,6 +549,14 @@ label {
     .cart_item_quantity {
         margin:0;
         padding:0;
+    }
+
+    .mobile-bottom{
+        margin-bottom: 4%;
+    }
+
+    .orderplaced{
+        margin-bottom: 75px;
     }
 
 }

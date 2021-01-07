@@ -69,8 +69,8 @@ function insertItemToDOM(product) {
     </div>
   `);
 
-  addCartFooter();
-  
+    addCartFooter();
+
 }
 
 /* Functions handling item action buttons in cart */
@@ -128,8 +128,8 @@ function removeItem(product, cartItemDOM, addToCartButtonDOM) {
 /* Functions handling footer of clear and checkout */
 
 function addCartFooter() {
-  if (document.querySelector('.cart-footer') === null) {
-    cartDOM.insertAdjacentHTML('afterend', `
+    if (document.querySelector('.cart-footer') === null) {
+        cartDOM.insertAdjacentHTML('afterend', `
       <div class="cart-footer cart-buttons-container mt-3 d-flex justify-content-between">
         <button class="btn btn-black" data-action="clear_cart">Clear Cart</button>
         <h4 data-action="total"></h4>
@@ -137,34 +137,34 @@ function addCartFooter() {
       </div>
     `);
 
-    document.querySelector('[data-action="clear_cart"]').addEventListener('click', () => clearCart());
-  }
+        document.querySelector('[data-action="clear_cart"]').addEventListener('click', () => clearCart());
+    }
 }
 
 function clearCart() {
-  cartDOM.querySelectorAll('.cart_item').forEach(cartItemDOM => {
-    cartItemDOM.classList.add('cart_item-removed');
-    setTimeout(() => cartItemDOM.remove(), 250);
-  });
+    cartDOM.querySelectorAll('.cart_item').forEach(cartItemDOM => {
+        cartItemDOM.classList.add('cart_item-removed');
+        setTimeout(() => cartItemDOM.remove(), 250);
+    });
 
-  cart = [];
-  localStorage.removeItem('cart');
-  document.querySelector('.cart-footer').remove();
+    cart = [];
+    localStorage.removeItem('cart');
+    document.querySelector('.cart-footer').remove();
 
-  addToCartButtonsDOM.forEach(addToCartButtonDOM => {
-    addToCartButtonDOM.innerText = 'Add To Cart';
-    addToCartButtonDOM.disabled = false;
-  });
+    addToCartButtonsDOM.forEach(addToCartButtonDOM => {
+        addToCartButtonDOM.innerText = 'Add To Cart';
+        addToCartButtonDOM.disabled = false;
+    });
 }
 
 function countCartTotal() {
-  let cartTotal = 0;
-  cart.forEach(cartItem => cartTotal += cartItem.quantity * cartItem.price);
-  let total = cartTotal.toFixed(2);
-  document.querySelector('[data-action="total"]').innerText = `Total : $ ${total}`;
+    let cartTotal = 0;
+    cart.forEach(cartItem => cartTotal += cartItem.quantity * cartItem.price);
+    let total = cartTotal.toFixed(2);
+    document.querySelector('[data-action="total"]').innerText = `Total : $ ${total}`;
 }
 
 function saveCart() {
-  localStorage.setItem('cart', JSON.stringify(cart));
-  countCartTotal();
+    localStorage.setItem('cart', JSON.stringify(cart));
+    countCartTotal();
 }
