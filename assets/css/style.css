@@ -1,377 +1,404 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap');
 
 /*General*/
+
 html body {
-    background-color:#d9b5b5;
+	background-color: #d9b5b5;
 }
 
-.buffer{ 
-    margin-top:20px;
-    margin-bottom: 20px;
+.buffer {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-.bottom-buffer{
-    margin-bottom: 3%;
+.bottom-buffer {
+	margin-bottom: 3%;
 }
 
-.full-margin{
-    margin:5px;
+.full-margin {
+	margin: 5px;
 }
+
 
 /* Navbar styling */
-.nav-name{
-  font-family: 'IM Fell Great Primer', cursive , sans-serif;  
-  font-size: xx-large;
+
+.nav-name {
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	font-size: xx-large;
 }
 
 .nav-link {
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    margin: 0px 30px;
-    font-size: x-large;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	margin: 0px 30px;
+	font-size: x-large;
 }
 
-.navbar .active{
-    background:#55585c;
-    border-radius:25px;
+.navbar .active {
+	background: #55585c;
+	border-radius: 25px;
 }
+
 
 /* text styling */
-.title-name{
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    color: #fafafaad;
-    text-align: center;
-    text-decoration: underline;
-    line-height: 2;
+
+.title-name {
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	color: #fafafaad;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 2;
 }
 
-.about-text{
-    line-height: 2;
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    color: #fafafaad;
-    text-align: center;
-    word-spacing: 1px;
-    font-size: large;
-    padding: 0px 40px;
+.about-text {
+	line-height: 2;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	color: #fafafaad;
+	text-align: center;
+	word-spacing: 1px;
+	font-size: large;
+	padding: 0px 40px;
 }
+
 
 /*About styling*/
-.about-img{
-    padding: 20px 40px;
-    width: 100%;
-    height: 770px;
+
+.about-img {
+	padding: 20px 40px;
+	width: 100%;
+	height: 770px;
 }
+
 
 /*Book- styling*/
-.book-img{
-    padding: 20px 40px;
-    width: 100%;
-    height: 520px;
+
+.book-img {
+	margin: 20px 15px;
+	object-fit: contain;
 }
+
 
 /* Footer styling */
+
 footer {
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 6%;
-    background-color:#343a40;
-    text-align: center;
-    padding-top:5px;
-    padding-bottom:35px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 6%;
+	background-color: #343a40;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 35px;
 }
 
+
 /*Link Styling*/
+
 .social-links {
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .social-links li a {
-    margin:15px;
-    font-size: x-large;
-    color: #fafafaad;
+	margin: 15px;
+	font-size: x-large;
+	color: #fafafaad;
 }
+
 
 /*Button styling*/
+
 .button1 {
-    padding: 5px;
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    font-size:medium;
-    text-align: center;
-    vertical-align: middle;
-    color: #fafafaad;
-    background-color:#343a40;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin: 10px;
+	padding: 5px;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	font-size: medium;
+	text-align: center;
+	vertical-align: middle;
+	color: #fafafaad;
+	background-color: #343a40;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	margin: 10px;
 }
 
-.icon{
-    vertical-align: middle;
-    margin-bottom:6px;
+.icon {
+	vertical-align: middle;
+	margin-bottom: 6px;
 }
+
 
 /*Cart styling*/
 
-.cart-icon{
-    padding: 10px 25px;
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    font-size:xx-large;
-    color: #fafafaad;
-    background-color:#55585c;
-    border-radius: 15px;
-    position: sticky;
-    float:right;
-    margin-right:10px;
-    bottom: 60px;
-    top:10px;
+.cart-icon {
+	padding: 10px 25px;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	font-size: xx-large;
+	color: #fafafaad;
+	background-color: #55585c;
+	border-radius: 15px;
+	position: sticky;
+	float: right;
+	margin-right: 10px;
+	bottom: 60px;
+	top: 10px;
 }
-
 
 .cartView {
-    position: fixed;
-    min-height: 160px;
-    left: 25%;
-    top:2%;
-    transition: all 0.3s ease-in-out;
-    background: rgba(85, 88, 92, 0.6);
-    width: 0;
-    overflow: hidden;
-    margin-bottom: 5%;
-    }
+	position: fixed;
+	min-height: 160px;
+	left: 25%;
+	top: 2%;
+	transition: all 0.3s ease-in-out;
+	background: rgba(85, 88, 92, 0.6);
+	width: 0;
+	overflow: hidden;
+	margin-bottom: 5%;
+}
 
 .show-cart {
-    width: 50%;
-    padding: 32px 24px;
-    transform: rotateY(-360deg);
-    }
-   
-.cart_item {
-    display: grid;
-    grid-template-columns: 16px 112px 16px auto 16px auto auto;
-    justify-content: space-between;
-    align-items: center;  
-    text-align: center;
-    padding: 2px;
-    animation: .3s add-cart-item;
+	width: 50%;
+	padding: 32px 24px;
+	transform: rotateY(-360deg);
 }
 
-.cart img{
-        height: 60px;
-        width: 60px;
-        padding: 5px;
-    }
+.cart_item {
+	display: grid;
+	grid-template-columns: 16px 112px 16px auto 16px auto auto;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 2px;
+	animation: .3s add-cart-item;
+}
+
+.cart img {
+	height: 60px;
+	width: 60px;
+	padding: 5px;
+}
+
 
 /* cart item */
+
 .cart-item-remove {
-    color: #343a40;
-    transition: all 1s ease-in-out;
-    }
-
-.cart-item-remove:hover {
-    transform: scale(1.1);
-    color: #000000;
-    }
-
-.cart h3{
-    margin:0;
+	color: #343a40;
+	transition: all 1s ease-in-out;
 }
 
- /* cart buttons */
-.btn-pink {
-    color: #d9b5b5 !important;
-    border-color: #d9b5b5 !important;
-    }
+.cart-item-remove:hover {
+	transform: scale(1.1);
+	color: #000000;
+}
 
-.btn-pink a{
-   color: #d9b5b5 !important;
-   text-emphasis: none; 
+.cart h3 {
+	margin: 0;
+}
+
+
+/* cart buttons */
+
+.btn-pink {
+	color: #d9b5b5 !important;
+	border-color: #d9b5b5 !important;
+}
+
+.btn-pink a {
+	color: #d9b5b5 !important;
+	text-emphasis: none;
 }
 
 .btn-black {
-    color: #000000 !important;
-    border-color: #000000 !important;
-    }
+	color: #000000 !important;
+	border-color: #000000 !important;
+}
 
 .btn-black:hover {
-    color: #d9b5b5 !important;
-    background: #000000 !important;
-    }
+	color: #d9b5b5 !important;
+	background: #000000 !important;
+}
 
 .btn-pink:hover {
-    background:#d9b5b5 !important;
-    }
-
-.btn-pink a:hover{
-    color: #000000!important;
-    text-decoration: none;
+	background: #d9b5b5 !important;
 }
+
+.btn-pink a:hover {
+	color: #000000!important;
+	text-decoration: none;
+}
+
 
 /* Home Gallery styling*/
 
-#carouselBandImages{
-    height: 770px;
-    margin-top:15px;
-    margin-bottom:5%;
+#carouselBandImages {
+	height: 770px;
+	margin-top: 15px;
+	margin-bottom: 5%;
 }
 
-#carouselBandImages img{
-    width: 90%;
-    height: 770px;
+#carouselBandImages img {
+	width: 90%;
+	height: 770px;
 }
+
 
 /*Video Styling */
-#music-video{
-    margin-top:3%;
+
+#music-video {
+	margin-top: 3%;
 }
 
-#music-video iframe{
-    margin:20px;
+#music-video iframe {
+	margin: 20px;
 }
 
-#music-video h2{
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    color: #fafafaad;
-    text-decoration: underline;
-    line-height: 1;
-    text-align:center;
+#music-video h2 {
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	color: #fafafaad;
+	text-decoration: underline;
+	line-height: 1;
+	text-align: center;
 }
+
 
 /* Contact Form Styling*/
-.form-text{
-    text-align: center;
-    font-family: 'IM Fell Great Primer', cursive , sans-serif;
-    color: #fafafaad;
-    padding-top: 30px;
+
+.form-text {
+	text-align: center;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	color: #fafafaad;
+	padding-top: 30px;
 }
 
-.form-layout{
-    height: 80%;
-    width: 60%;
-    margin-right: 20%;
-    margin-left: 20%;
-    padding-bottom:5%;
-    line-height: 10px;
+.form-layout {
+	height: 80%;
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding-bottom: 5%;
+	line-height: 10px;
 }
+
 
 /*Product card styling*/
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
-  text-align: center;
-  font-family: 'IM Fell Great Primer', cursive , sans-serif;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	text-align: center;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
 }
 
 .price {
-  color:#55585c;
-  font-size: 22px;
+	color: #55585c;
+	font-size: 22px;
 }
 
 .card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color:#fafafaad;
-  background-color: #55585c;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: #fafafaad;
+	background-color: #55585c;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
 }
 
 .card button:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 
-.card img{
-    height: 80%;
-    width: 100%;
+.card img {
+	height: 80%;
+	width: 100%;
 }
+
 
 /*Checkout form styling*/
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -16px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
 }
 
 .col-25 {
-  flex: 25%;
+	flex: 25%;
 }
 
 .col-50 {
-  flex: 50%;
+	flex: 50%;
 }
 
 .col-75 {
-  flex: 75%;
+	flex: 75%;
 }
 
 .col-25,
 .col-50,
 .col-75 {
-  padding: 0 16px;
+	padding: 0 16px;
 }
 
 .container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  margin-bottom: 20px;
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	margin-bottom: 20px;
 }
 
 input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
 
 label {
-  margin-bottom: 10px;
-  display: block;
+	margin-bottom: 10px;
+	display: block;
 }
 
 .icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: xx-large;
-  color: #55585c;
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: xx-large;
+	color: #55585c;
 }
 
 .btn2 {
-  background-color: #343a40;
-  color: #d9b5b5;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
+	background-color: #343a40;
+	color: #d9b5b5;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
 }
 
 .btn2:hover {
-  background-color: #55585c;
+	background-color: #55585c;
 }
+
 
 /* Order placed styling */
 
-.orderplaced{
-    background-color: #343a40;
-    color: #d9b5b5;
-    font-family:'IM Fell Great Primer', cursive , sans-serif;
-    width: 80%;
-    border: 15px solid gray;
-    padding: 50px;
-    vertical-align: middle;
-    text-align: center;
-    margin: 10%;
-
+.orderplaced {
+	background-color: #343a40;
+	color: #d9b5b5;
+	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+	width: 80%;
+	border: 15px solid gray;
+	padding: 50px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10%;
 }
 
 
@@ -379,188 +406,160 @@ label {
 
 
 /* Desktop response */
-@media screen and (min-width: 770px){
 
-    #button-position{
-        margin-left: 40%;
-        margin-right:40%;
-        width: 20%;
-    }
-
+@media screen and (min-width: 770px) {
+	#button-position {
+		margin-left: 40%;
+		margin-right: 40%;
+		width: 20%;
+	}
 }
+
 
 /* Tablet Response */
+
 @media screen and (max-width:769px) {
-
-    #carouselBandImages{
-        height: 80%;
-        margin-top:15px;
-        margin-bottom:15px;
-    }
-
-    #carouselBandImages img{
-        width: 90%;
-        height: 100%;
-    }
-
-    #button-position{
-        margin-left: 40%;
-        margin-right:40%;
-        margin-top: 5%;
-        width: 20%;
-    }
-
-    #about-img{
-        height:40%;
-        padding:10px;
-    }
-
-    #music-video{
-        column-count: 2;
-    }
-
-    #music-video iframe{
-        width: auto;
-    }
-
-    .form-layout{
-        height: 80%;
-        width: 99%;
-        margin-right: .5%;
-        margin-left: .5%;
-        padding-bottom:15%;
-    }
-
-    .about-text{
-        padding:25px 5px;
-    }
-
-    .cart{
-        left:30%;
-    }
-
-    .show-cart{
-        width: 90%;
-    }
-
-    .cartView{
-        left:5%;
-        top:5%;
-    }
-
-    .cart_item{
-        grid-template-columns: 16px 112px 16px 20px 5px 20px 20px;
-    }
-
-    .store-item-icon{
-        margin-bottom: 200px;
-    }
-
-    .mobile-bottom{
-        margin-bottom: 7%;
-    }
-
+	#carouselBandImages {
+		height: 80%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#carouselBandImages img {
+		width: 90%;
+		height: 100%;
+	}
+	#button-position {
+		margin-left: 40%;
+		margin-right: 40%;
+		margin-top: 5%;
+		width: 20%;
+	}
+	#about-img {
+		height: 40%;
+		padding: 10px;
+	}
+	.book-img {
+		object-fit: contain;
+		width: 735px;
+	}
+	#music-video {
+		column-count: 2;
+	}
+	#music-video iframe {
+		width: auto;
+	}
+	.form-layout {
+		height: 80%;
+		width: 97%;
+		margin-right: 1.5%;
+		margin-left: 1.5%;
+		padding-bottom: 15%;
+	}
+	.about-text {
+		padding: 25px 5px;
+	}
+	.cart {
+		left: 30%;
+	}
+	.show-cart {
+		width: 90%;
+	}
+	.cartView {
+		left: 5%;
+		top: 5%;
+	}
+	.cart_item {
+		grid-template-columns: 16px 112px 16px 20px 5px 20px 20px;
+	}
+	.store-item-icon {
+		margin-bottom: 200px;
+	}
+	.mobile-bottom {
+		margin-bottom: 7%;
+	}
 }
+
 
 /* Mobile Response */
+
 @media screen and (max-width:480px) {
-
-    footer{
-        margin-top:10%;
-        height:6%;
-    }
-
-    #button-position{
-        margin-left: 20%;
-        margin-right:20%;
-        width: 60%;
-        padding-bottom: 25px;
-    }
-
-    #carouselBandImages{
-        height: 80%;
-        margin-top:15px;
-        margin-bottom:15px;
-    }
-
-    #carouselBandImages img{
-        width: 90%;
-        height: 100%;
-    }
-
-    .title-name{
-        padding:25px 5px;
-    }
-
-    .about-img{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-   #music-video{
-        column-count: 2;
-        padding-bottom:10px;
-    }
-
-    #music-video iframe{
-        height: 340;
-
-    }
-
-    .form-layout{
-        height: 80%;
-        width: 99%;
-        margin-right: .5%;
-        margin-left: .5%;
-        padding-bottom:15%;
-    }
-
-    .card{
-        width:80%;
-    }
-
-    .book-img{
-        padding:20px 20px;
-        height:360px;
-    }
-
-    .show-cart{
-        width: 100%;
-        overflow: auto;
-    }
-
-    .cartView{
-        top:0;
-        left:0;
-        bottom:10%;
-    }
-
-    .cart .title-name{
-        margin:0;
-        padding: 0;
-    } 
-
-    .cart_item{
-        grid-template-columns: auto auto auto auto auto auto auto;
-        padding:5px;
-    }
-
-    .cart_item_quantity {
-        margin:0;
-        padding:0;
-    }
-
-    .mobile-bottom{
-        margin-bottom: 4%;
-    }
-
-    .orderplaced{
-        margin-bottom: 75px;
-    }
-
-    .container{
-        margin-bottom: 75px;
-    }
-
+	footer {
+		margin-top: 10%;
+		height: 6%;
+	}
+	#button-position {
+		margin-left: 20%;
+		margin-right: 20%;
+		width: 60%;
+		padding-bottom: 25px;
+	}
+	#carouselBandImages {
+		height: 80%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#carouselBandImages img {
+		width: 90%;
+		height: 100%;
+	}
+	.title-name {
+		padding: 25px 5px;
+	}
+	.about-img {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+	#music-video {
+		column-count: 2;
+		padding-bottom: 10px;
+	}
+	#music-video iframe {
+		height: 340;
+	}
+	.form-layout {
+		height: 80%;
+		width: 97%;
+		margin-right: 1.5%;
+		margin-left: 1.5%;
+		padding-bottom: 15%;
+	}
+	.card {
+		width: 80%;
+	}
+	.book-img {
+		object-fit: contain;
+		width: 92%;
+	}
+	.show-cart {
+		width: 100%;
+		overflow: auto;
+	}
+	.cartView {
+		top: 0;
+		left: 0;
+		bottom: 10%;
+	}
+	.cart .title-name {
+		margin: 0;
+		padding: 0;
+	}
+	.cart_item {
+		grid-template-columns: auto auto auto auto auto auto auto;
+		padding: 5px;
+	}
+	.cart_item_quantity {
+		margin: 0;
+		padding: 0;
+	}
+	.mobile-bottom {
+		margin-bottom: 4%;
+	}
+	.orderplaced {
+		margin-bottom: 75px;
+	}
+	.container {
+		margin-bottom: 75px;
+	}
 }
+

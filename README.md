@@ -113,6 +113,7 @@ With progress in the course I hope to gain the knowledge to add functionality to
 * iframe used to embed with the help of [W3Schools](https://www.w3schools.com/html/html_youtube.asp).
 * [cdnjs](https://cdnjs.com/) used to insure proper links used.
 * [EmailJS](https://www.emailjs.com/) used for passing information sumbitted via form in music.html to specified email address. 
+* [FreeFormatter](https://www.freeformatter.com/) used for formatting all code.
 
 ## Testing
 
@@ -122,7 +123,7 @@ Issues were found with similar elements on different pages using the same tags. 
 Verified no conflicting html and css. Response elements achieved using Bootstrap and Media Query CSS.
 
 ### Music video data types
-Upon passing the code through the validator error were thrown replating to a placement using a float vaule and dimensions using px and %. 
+Upon passing the code through the validator error were thrown replating to a placement using a float value and dimensions using px and %. 
 These data types were removed and replaced with the correct syntax for iframe elements.
 
 ### Checkout form fields
