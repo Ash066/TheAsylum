@@ -9,7 +9,7 @@ The goal of this site is to promote the artist Emilie Autumn and associated fand
 ## UX
 
 ### Design
-Website design was initially planned using the following wireframes which I created:
+Website design was initially planned using the following wireframes which I created using the Balsamiq software:
  
  #### Desktop
  ![Desktop Home](assets/wireframes/desktop-wireframe-home.jpg)
@@ -55,7 +55,7 @@ The footer contains social media links which will open in a new tab.
 
 ### About
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
-This page features information about the artist.
+This page features information about the artist's history and current projects.
 
 ### Music
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
@@ -63,11 +63,22 @@ This pages layout is achieved utilising rows and columns and embedded videos. Th
 
 ### Book
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
-It includes images of the book, a short description and links to buy.
+It includes a promotional image of the book which acts as a link to buy the book and a short description.
 
 ### Shop
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
-This page utilises a free/open source ecommerce api.
+This page utilises the shop.js file which provides functionality to user input. It contains product cards with functioning add to cart buttons. 
+It also contains a cart button when clicked alternates between showing and hiding the cart. 
+The cart has the capabilty of displaying items in cart, increasing and decreasing quantity, removing individual items from the cart, display running total, clear cart and advance to checkout.
+
+### Checkout
+The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
+This page is only accessable via the checkout button on the cart located within the shop.html page. This page features a standard input form for required details for completing the order. 
+This form will not complete to action without all fields complete.
+
+### OrderComplete
+The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
+This page will shop as a result of completing the form on the checkout.html page. It contains a confirmation that the order has been placed and thanks the customer.
 
 ## Tecnologies Used
 * HTML 5
@@ -89,10 +100,10 @@ This page utilises a free/open source ecommerce api.
 * index.html validated by [MarkUpValidationService](https://validator.w3.org/)
 * about.html validated by [MarkUpValidationService](https://validator.w3.org/)
 * music.html validated by [MarkUpValidationService](https://validator.w3.org/)
-* events.html validated by [MarkUpValidationService](https://validator.w3.org/)
-* merch.html validated by [MarkUpValidationService](https://validator.w3.org/)
-
-
+* book.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* shop.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* checkout.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* ordercomplete.html validated by [MarkUpValidationService](https://validator.w3.org/)
 
 ## Deployment
 
@@ -112,6 +123,29 @@ The following steps were taken to deploy this site:
 10. Scroll down to the Github Pages section of the settings.
 11. Within the Github Pages section, under the source heading, I selected the master branch and the root folder.
 12. Saved the selected options.
+
+## Cloning
+Cloning process adapted from official [Github](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) documentation.
+
+### To clone this projects repository using the command line follow these steps:
+
+1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/TheAsylum).
+2. Above the list of files, click the "Code" dropdown menu.
+3. 
+* To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon.
+* To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon.
+* To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
+4. Open Git Bash.
+5. Type git clone, and then paste the URL you copied earlier (example : $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+6. Press Enter to create your local clone.
+
+### To clone this projects repository to GitHub Desktop follow these steps:
+
+1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/TheAsylum).
+2. Above the list of files, click the "Code" dropdown menu.
+3. Click Open with GitHub Desktop button to clone and open the repository with GitHub Desktop.
+4. Follow the prompts in GitHub Desktop to complete the clone.
+
 
 ## Credits
 
