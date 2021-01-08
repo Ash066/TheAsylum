@@ -61,10 +61,7 @@ While sales of merchandise is very important to me I also want to thank my custo
 #### User 5 - Site User
 I have come across this artist through youtube suggestions and their look really intrigued me and I want to know more about them.
 
-#### User 6 - Site User
-I have heard excerpts from the book featured on one of the artists albums and want to know more about the book and where to but it.
-
-#### User - 7 Site User
+#### User - 6 Site User
 As a fan in a small country I am unable to attend any of the artists shows but I want to support the artist by purchasing branded clothinging and showing my support by what I wear.
 
 
@@ -94,7 +91,7 @@ The cart has the capabilty of displaying items in cart, increasing and decreasin
 
 ### Checkout
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
-This page is only accessable via the checkout button on the cart located within the shop.html page. This page features a standard input form for required details for completing the order. 
+This page is only accessible about page. This page features information about the artists history via the checkout button on the cart located within the shop.html page. This page features a standard input form for required details for completing the order. 
 This form will not complete to action without all fields complete.
 
 ### OrderComplete
@@ -142,19 +139,53 @@ This was set up to use a sandbox account for the business and personal accounts.
 Due to an issue with testing using sandbox accounts created with no live functionality available the checkout could not complete sign in using sandbox credentials.
 The paypay element removed and replaced with a html checkout and order complete page.
 
-### User Story 1 - Artist
+### User Stories Testing
 
-### User Story 2 - Artist
+#### User Story 1 - Artist
+##### Objective:
+As an artist I want to be sure that people can be diverted to our music platforms to increase playcount statistics on our music and in turn increase revenue from this avenue.
+##### Addressed:
+As the artist's main forte is their music, links to their music platform accounts were placed on the homepage to drive traffic to these platforms while still keeping the website tab open.
+![example](assets/testing/user-1.jpg)
 
-### User Story 3 - Artist
+#### User Story 2 - Artist
+##### Objective:
+As an artist with a deep connect with my community of fans I want to be sure that new fans can find our social media easily and join our community.
+##### Addressed:
+As the artist's has a large community envolvement social links were placed in the footer of all pages. These links open in a new tab so that the website is still open alongside the social sites.
+![example](assets/testing/user-2.jpg)
 
-### User Story 4 - Artist
+#### User Story 3 - Artist
+##### Objective:
+As my fan community and music features a lot of references to our created lore, I want new fans to easily access the book and join the fun while boosting book sales.
+##### Addressed:
+As the artist's created lore is referenced in the music, book and merchandise the book.html page contains a promotional image for the book letting users know a free preview is available. 
+This image links to the amazon page where the user can avail of the preview and buy the book. This page also gives a brief description of the book which gives the user a quick insight to the basic lore used in the music, book and merchandise.
+![example](assets/testing/user-3.jpg)
 
-### User Story 5 - Site User
+#### User Story 4 - Artist
+##### Objective:
+While sales of merchandise is very important to me I also want to thank my customers and let them know they are part of a community.
+##### Addressed:
+Upon completion of the checkout form that is launched via the shopping cart located within the shop.html page, the user is directed to a ordercomplete page which displays a thank you and welcome message.
+![example](assets/testing/user-4.jpg)
 
-### User Story 6 - Site User
+#### User Story 5 - Site User
+##### Objective:
+I have come across this artist through youtube suggestions and their look really intrigued me and I want to know more about them.
+##### Addressed:
+This type of user will find information in the clearly labeled and easily accessible about page. This page features a deep artists history and lists their multiple projects including the most current project.
+![example](assets/testing/user-5.jpg)
 
-### User Story 7 - Site User
+#### User Story 6 - Site User
+##### Objective:
+As a fan in a small country I am unable to attend any of the artists shows but I want to support the artist by purchasing branded clothinging and showing my support by what I wear.
+##### Addressed:
+This type of user will find a functioning shop page which displays all the products available. This page also contains a shopping cart which keeps a running total of the combined price. 
+The items within the cart can be increased or decreased in quantity or totally removed from the cart. In the footer of the cart alongside the cart total are two functioning buttons to either clear the cart or to progress to checkout.
+![example](assets/testing/user-6-a.jpg)
+![example](assets/testing/user-6-b.jpg)
+
 
 
 ### Validating
@@ -201,7 +232,7 @@ Cloning process adapted from official [Github](https://docs.github.com/en/free-p
 * To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon.
 * To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
 4. Open Git Bash.
-5. Type git clone, and then paste the URL you copied earlier (example : $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+5. Type git clone, and then paste the URL you copied earlier (example : $ git clone https://github.com/Ash066/TheAsylum)
 6. Press Enter to create your local clone.
 
 ### To clone this projects repository to GitHub Desktop follow these steps:
