@@ -46,6 +46,27 @@ Wireframes available as pdf here:
 
 ### User Stories
 
+#### User 1 - Artist 
+As an artist I want to be sure that people can be diverted to our music platforms to increase playcount statistics on our music and in turn increase revenue from this avenue.
+
+#### User 2 - Artist 
+As an artist with a deep connect with my community of fans I want to be sure that new fans can find our social media easily and join our community.
+
+#### User 3 - Artist
+As my fan community and music features a lot of references to our created lore, I want new fans to easily access the book and join the fun while boosting book sales.
+
+#### User 4 - Artist 
+While sales of merchandise is very important to me I also want to thank my customers and let them know they are part of a community.
+
+#### User 5 - Site User
+I have come across this artist through youtube suggestions and their look really intrigued me and I want to know more about them.
+
+#### User 6 - Site User
+I have heard excerpts from the book featured on one of the artists albums and want to know more about the book and where to but it.
+
+#### User - 7 Site User
+As a fan in a small country I am unable to attend any of the artists shows but I want to support the artist by purchasing branded clothinging and showing my support by what I wear.
+
 
 ## Features
 
@@ -80,6 +101,10 @@ This form will not complete to action without all fields complete.
 The about page features the same responsive navigation and footer of the index page promoting familiarity of use.
 This page will shop as a result of completing the form on the checkout.html page. It contains a confirmation that the order has been placed and thanks the customer.
 
+### Features left to implement
+While this project features a functioning shop page and cart, the checkout and order complete are merely frontend elements. 
+With progress in the course I hope to gain the knowledge to add functionality to these elements.
+
 ## Tecnologies Used
 * HTML 5
 * Javascript
@@ -94,6 +119,44 @@ This page will shop as a result of completing the form on the checkout.html page
 
 ## Testing
 
+### Website display response 
+Website display response was tested for funtionality on destop, tablet and mobile resolutions using chrome developer tools. 
+Issues were found with similar elements on different pages using the same tags. This issue was addressed by adding additional styling and tags to the css file and appling them to the effected elements.
+Verified no conflicting html and css. Response elements achieved using Bootstrap and Media Query CSS.
+
+### Music video data types
+Upon passing the code through the validator error were thrown replating to a placement using a float vaule and dimensions using px and %. 
+These data types were removed and replaced with the correct syntax for iframe elements.
+
+### Checkout form fields
+Checkout form was completing to order placed page without all required fields. 
+This was addressed by adding the required attribute to the input fields.
+
+### Contact form completion unclear
+Upon submitting the contact form which sends an email to the artist, the user recieved no confirmation of completion.
+This was addressed by add an alert window which pops up to notify the user the action has been sucessful.
+
+### Order checkout javascript
+Within the shop.js file a checkout function was added which passed the cart information to a paypal checkout which would bring the user to a paypal secure checkout.
+This was set up to use a sandbox account for the business and personal accounts. 
+Due to an issue with testing using sandbox accounts created with no live functionality available the checkout could not complete sign in using sandbox credentials.
+The paypay element removed and replaced with a html checkout and order complete page.
+
+### User Story 1 - Artist
+
+### User Story 2 - Artist
+
+### User Story 3 - Artist
+
+### User Story 4 - Artist
+
+### User Story 5 - Site User
+
+### User Story 6 - Site User
+
+### User Story 7 - Site User
+
+
 ### Validating
 
 * style.css validated by [Jigsaw-MarkUpValidationService](https://jigsaw.w3.org/css-validator/)
@@ -104,6 +167,8 @@ This page will shop as a result of completing the form on the checkout.html page
 * shop.html validated by [MarkUpValidationService](https://validator.w3.org/)
 * checkout.html validated by [MarkUpValidationService](https://validator.w3.org/)
 * ordercomplete.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* email.js validated by [JSHint](https://jshint.com/)
+* shop.js validated by [JSHint](https://jshint.com/)
 
 ## Deployment
 
@@ -153,7 +218,7 @@ Cloning process adapted from official [Github](https://docs.github.com/en/free-p
 
 * About information located on the about.html page copied from official site, found [here](https://www.emilieautumn.com/story#the-story).
 * The story information located on the book.html page was copied from the official site, found [here](https://www.emilieautumn.com/books#the-book).
-* Checkout form found in checkout.html adapted from [w3schools](https://www.w3schools.com/howto/howto_css_checkout_form.asp)
+* Checkout form found in checkout.html adapted from [w3schools](https://www.w3schools.com/howto/howto_css_checkout_form.asp).
 
 ### Media
 
