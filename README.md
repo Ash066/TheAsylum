@@ -140,6 +140,14 @@ This was set up to use a sandbox account for the business and personal accounts.
 Due to an issue with testing using sandbox accounts created with no live functionality available the checkout could not complete sign in using sandbox credentials.
 The paypay element removed and replaced with a html checkout and order complete page.
 
+### Upon deployment Shop display issue
+Upon deployment it was found that the product image and product card elements withing the shop.html page were misaligned. 
+This was corrected by adding the object fit value to the product images and defined height and width values for the card elements.
+
+### Homepage element conflicting issue.
+Upon deployment it was found that the carousel elements controls overlapped the footer which negated the footer button functionality and gave a novice appearance to the site.
+This was addressed by adding a z-index value to the carousel and footer elements to avoid element collision. 
+
 ### User Stories Testing
 
 #### User Story 1 - Artist

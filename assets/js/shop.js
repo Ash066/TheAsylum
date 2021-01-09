@@ -18,7 +18,6 @@ let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 const cartDOM = document.querySelector('.cart');
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="add_to_cart"]');
 
-
 if (cart.length > 0) {
 	cart.forEach(cartItem => {
 		const product = cartItem;
@@ -63,10 +62,10 @@ function insertItemToDOM(product) {
       <img class="cart_item_image" src="${product.image}" alt="${product.name}">
       <h3 class="cart_item_name">${product.name}</h3>
       <h3 class="cart_item_price">${product.price}</h3>
-      <button class="btn btn-secondary btn-small${(product.quantity === 1 ? ' btn-danger' : '')}" data-action="decrease_item">−</button>
+      <button class="btn btn-secondary btn-small${(product.quantity === 1 ? ' btn-danger' : '')}" data-action="decrease_item">&minus;</button>
       <h3 class="cart_item_quantity">${product.quantity}</h3>
-      <button class="btn btn-secondary btn-small" data-action="increase_item">+</button>
-      <button class="btn btn-danger btn-small" data-action="remove_item">×</button>
+      <button class="btn btn-secondary btn-small" data-action="increase_item">&plus;</button>
+      <button class="btn btn-danger btn-small" data-action="remove_item">&times;</button>
     </div>
   `);
 
@@ -163,11 +162,9 @@ function countCartTotal() {
 	cart.forEach(cartItem => cartTotal += cartItem.quantity * cartItem.price);
 	const total = cartTotal.toFixed(2);
 	document.querySelector('[data-action="total"]').innerText = `Total : $ ${total}`;
-	document.getElementById("checkout_button").innerText = `Pay $${cartTotal}`;
 }
 
 function saveCart() {
 	localStorage.setItem('cart', JSON.stringify(cart));
 	countCartTotal();
 }
-

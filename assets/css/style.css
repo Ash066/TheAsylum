@@ -90,7 +90,9 @@ footer {
 	background-color: #343a40;
 	text-align: center;
 	padding-top: 5px;
-	padding-bottom: 35px;
+    padding-bottom: 35px;
+    clear: both;
+    z-index: 3;
 }
 
 
@@ -233,7 +235,8 @@ footer {
 #carouselBandImages {
 	height: 770px;
 	margin-top: 15px;
-	margin-bottom: 5%;
+    margin-bottom: 5%;
+    z-index: 0;
 }
 
 #carouselBandImages img {
@@ -286,7 +289,10 @@ footer {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: auto;
 	text-align: center;
-	font-family: 'IM Fell Great Primer', cursive, sans-serif;
+    font-family: 'IM Fell Great Primer', cursive, sans-serif;
+    height: 550px;
+    padding-bottom: 50px;
+    padding-top: 15px;
 }
 
 .price {
@@ -311,8 +317,8 @@ footer {
 }
 
 .card img {
-	height: 80%;
-	width: 100%;
+    object-fit: contain;
+    height: 80%;
 }
 
 
@@ -471,12 +477,14 @@ label {
 	.cart_item {
 		grid-template-columns: 16px 112px 16px 20px 5px 20px 20px;
 	}
-	.store-item-icon {
-		margin-bottom: 200px;
-	}
+
 	.mobile-bottom {
 		margin-bottom: 7%;
-	}
+    }
+    
+    .card{
+        width: 90%;
+    }
 }
 
 
@@ -524,9 +532,9 @@ label {
 		margin-left: 1.5%;
 		padding-bottom: 15%;
 	}
-	.card {
-		width: 80%;
-	}
+	/*.card {
+		
+	}*/
 	.book-img {
 		object-fit: contain;
 		width: 92%;
