@@ -297,7 +297,4 @@ All videos are sourced from the official Emilie Autumn [Youtube](https://www.you
 #### This project and site could not have been completed without the support of the following people:
 
 * Emilie Autumn whom provided inspiration for this project.
-* Roman Grubic, my in class co-ordinator whom provided support on a daily basis.
-* Excellence Ilesanmi, my mentor whom provided industry perspective and support via the mentor sessions.
-* My family, whom provided support during the christmas period.
-* Code institute, for providing this opportunity to take part in this course and for the learning supports provided.
+
